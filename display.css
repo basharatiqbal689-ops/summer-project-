@@ -1,0 +1,118 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 20px;
+    color: #333;
+}
+
+/* Table container */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+}
+
+/* Table rows */
+td {
+    background-color: #ffffff;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) td {
+    background-color: #f2f6fc;
+}
+
+/* Hover effect */
+tr:hover td {
+    background-color: #d6eaf8;
+    transition: 0.3s;
+}
+
+/* Action links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+/* -------------------- */
+/* 📱 Responsive Design */
+/* -------------------- */
+
+/* For tablets (screen width ≤ 768px) */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* For mobile phones (screen width ≤ 480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 5px;
+    }
+}
